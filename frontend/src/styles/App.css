@@ -1,0 +1,130 @@
+/* =======================
+   THEME VARIABLES
+======================= */
+
+.app.dark {
+  --bg: #020617;
+  --card: #0f172a;
+  --primary: #6366f1;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --danger: #ef4444;
+}
+
+.app.light {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --primary: #4f46e5;
+  --text: #020617;
+  --muted: #64748b;
+  --danger: #dc2626;
+}
+
+/* =======================
+   GLOBAL
+======================= */
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+/* =======================
+   LAYOUT
+======================= */
+
+.container {
+  width: 520px;
+  background: var(--card);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.theme-toggle {
+  background: transparent;
+  color: var(--text);
+}
+
+/* =======================
+   INPUT
+======================= */
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--text);
+}
+
+input::placeholder {
+  color: var(--muted);
+}
+
+/* =======================
+   TASK ITEM
+======================= */
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.task-actions button {
+  background: transparent;
+}
+
+.task-actions .delete {
+  color: var(--danger);
+}

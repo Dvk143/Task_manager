@@ -1,0 +1,16 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && venv\\Scripts\\python app.py",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "framer-motion": "^12.28.1"
+  }
+}
