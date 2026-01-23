@@ -46,5 +46,3 @@ The app supports complete CRUD operations, advanced task workflows, modern UI/UX
 
 ---
 
-## 📂 Project Structure
-
